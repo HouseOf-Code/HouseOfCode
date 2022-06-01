@@ -19,11 +19,71 @@
           <a href="" class="nav__link">Cases</a>
         </li>
         <li class="nav__item">
-          <a href="" class="nav__link">Contatct</a>
+          <a href="" class="nav__link active">Contact</a>
         </li>
       </ul>
       <a href="">HoC</a>
     </nav>
-    <main></main>
+    <main>
+      <h1>Contact us</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam vitae
+        officia ut quam voluptatem assumenda molestiae culpa soluta nostrum qui
+        nam, nulla unde sit dolorum ipsum vel mollitia eius earum dolor ducimus
+        repellat voluptatibus.
+      </p>
+      <form>
+        <div>
+          <label for="email" id="form__email--label">Email</label>
+          <input type="email" name="email" id="form__email--input" />
+          <span class="form__email--error">* please enter a valid email</span>
+        </div>
+
+        <div>
+          <label for="name" id="form__name--label">Name / Company</label>
+          <input type="text" name="name" id="form__name--input" />
+          <span class="form__name--error"
+            >* must contain minimum 3 characters</span
+          >
+        </div>
+
+        <div>
+          <textarea
+            name="message"
+            id="form__message--input"
+            cols="30"
+            rows="10"
+          >
+Write your message here...</textarea
+          >
+          <span class="form__message--error"
+            >* message must be minimum 15 characters</span
+          >
+        </div>
+
+        <label for="categories"></label>
+        <select name="categories" id="form__select--input">
+          <option value="general">General</option>
+          <option value="services">Services</option>
+          <option value="technical">Technical</option>
+        </select>
+        <button type="submit" id="form__submit--input">Submit</button>
+        <span class="form__submit--error"></span>
+      </form>
+    </main>
+    <footer>
+      <div>
+        <p>House of code</p>
+        <a href="#">f</a>
+        <a href="#">in</a>
+      </div>
+      <div>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="cases.html">Cases</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </footer>
+    <script src="/js/formValidation.js"></script>
   </body>
 </html>
