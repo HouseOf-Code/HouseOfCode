@@ -199,6 +199,10 @@ select {
   color: #ffffff;
 }
 
+.services__header {
+  background-color: #2d848f;
+}
+
 .nav {
   background-color: #1c5961;
   display: -webkit-box;
