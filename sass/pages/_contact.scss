@@ -12,31 +12,3 @@
     margin: 0px 1rem;
   }
 }
-<<<<<<< Updated upstream
-
-.footer {
-  background-color: $secondary-color;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-
-  &__social {
-    color: $light-color;
-  }
-
-  &__links {
-    display: grid;
-    margin-top: 1rem;
-
-    & a {
-      margin: 10px;
-    }
-  }
-
-  @media (min-width: 600px) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-}
-=======
->>>>>>> Stashed changes
