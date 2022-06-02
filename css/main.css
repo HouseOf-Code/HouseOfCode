@@ -20,6 +20,8 @@ p {
 a {
   text-decoration: none;
   color: #ffffff;
+  text-transform: uppercase;
+  font-family: "Rig Shaded";
 }
 
 a:hover {
@@ -40,7 +42,7 @@ a:hover {
   text-align: center;
 }
 
-#form__email--label, #form__name--label {
+#form__email--label, #form__name--label, #form__message--label {
   position: absolute;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -54,11 +56,12 @@ a:hover {
   border-top-right-radius: 10px;
 }
 
-#form__email--input, #form__name--input, #form__message--input, #form__select--input {
+#form__email--input, #form__name--input, #form__message--input {
   padding: 0.4rem;
 }
 
 #form__select--input {
+  height: 2.5rem;
   margin: auto;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -73,6 +76,12 @@ a:hover {
   padding: 0.7rem;
   background-color: #2d848f;
   color: #ffffff;
+}
+
+#form .error {
+  color: #ff4500;
+  position: relative;
+  bottom: 15px;
 }
 
 input,
@@ -113,6 +122,14 @@ select {
 
 .contact__intro {
   text-align: center;
+  width: 250px;
+  margin: auto;
+}
+
+@media (min-width: 575px) {
+  .contact__intro {
+    width: 450px;
+  }
 }
 
 .contact__intro p {
@@ -140,6 +157,10 @@ select {
   display: -ms-grid;
   display: grid;
   margin-top: 1rem;
+}
+
+.footer__links a {
+  margin: 10px;
 }
 
 .services__intro {
