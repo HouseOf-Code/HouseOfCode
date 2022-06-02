@@ -21,7 +21,7 @@ a {
   text-decoration: none;
   color: #ffffff;
   text-transform: uppercase;
-  font-family: "Rig Shaded";
+  font-family: "rig-shaded-medium-face";
 }
 
 a:hover {
@@ -120,13 +120,23 @@ select {
   color: #2d848f;
 }
 
+.form__success {
+  background-color: #2d848f;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 5rem auto;
+  color: white;
+  padding: 1rem;
+}
+
 .contact__intro {
   text-align: center;
   width: 250px;
   margin: auto;
 }
 
-@media (min-width: 575px) {
+@media (min-width: 600px) {
   .contact__intro {
     width: 450px;
   }
@@ -135,32 +145,6 @@ select {
 .contact__intro p {
   text-align: left;
   margin: 0px 1rem;
-}
-
-.footer {
-  background-color: #1c5961;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: center;
-}
-
-.footer__social {
-  color: #ffffff;
-}
-
-.footer__links {
-  display: -ms-grid;
-  display: grid;
-  margin-top: 1rem;
-}
-
-.footer__links a {
-  margin: 10px;
 }
 
 .services__intro {
@@ -345,6 +329,53 @@ select {
   }
   to {
     height: 200px;
+  }
+}
+
+.container {
+  background: #1c5961;
+  height: 100px;
+  margin-bottom: 0.2rem;
+}
+
+.footer {
+  background-color: #1c5961;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  font-family: "rig-shaded-medium-face";
+}
+
+.footer__social {
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.footer__social * {
+  font-size: 2rem;
+}
+
+.footer__links {
+  display: -ms-grid;
+  display: grid;
+  margin-top: 1rem;
+}
+
+.footer__links a {
+  margin: 10px;
+}
+
+@media (min-width: 600px) {
+  .footer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
   }
 }
 /*# sourceMappingURL=main.css.map */

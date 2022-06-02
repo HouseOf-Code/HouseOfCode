@@ -1,4 +1,3 @@
-
 $primary-color: #2d848f;
 $secondary-color: #1c5961;
 $light-color: #ffffff;
@@ -14,7 +13,7 @@ $fonts: (
   "primary": "Serenity",
   "headings-gravesend": "Gravesend Sans",
   "headings-gibson": "Gibson",
-  "headings-rig": "Rig Shaded",
+  "headings": "rig-shaded-medium-face",
 );
 
 @function getFonts($font) {
