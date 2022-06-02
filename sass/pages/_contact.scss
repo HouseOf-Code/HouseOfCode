@@ -3,7 +3,7 @@
   width: 250px;
   margin: auto;
 
-  @media (min-width: 575px) {
+  @media (min-width: $mobile-width) {
     width: 450px;
   }
 
@@ -12,6 +12,7 @@
     margin: 0px 1rem;
   }
 }
+<<<<<<< Updated upstream
 
 .footer {
   background-color: $secondary-color;
@@ -37,3 +38,5 @@
     grid-template-columns: 1fr 1fr;
   }
 }
+=======
+>>>>>>> Stashed changes

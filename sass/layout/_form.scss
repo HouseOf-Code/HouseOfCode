@@ -73,3 +73,11 @@ select {
 .form__icon {
   color: $primary-color;
 }
+
+.form__success {
+  background-color: $primary-color;
+  width: fit-content;
+  margin: 5rem auto;
+  color: white;
+  padding: 1rem;
+}
