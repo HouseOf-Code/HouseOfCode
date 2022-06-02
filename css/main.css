@@ -71,14 +71,14 @@ a:hover {
   border: none;
   border-radius: 15px;
   padding: 0.7rem;
-  background-color: #2D848F;
+  background-color: #2d848f;
   color: #ffffff;
 }
 
 input,
 textarea,
 select {
-  border: 3px solid #2D848F;
+  border: 3px solid #2d848f;
   margin-bottom: 1rem;
   width: 90%;
 }
@@ -108,7 +108,7 @@ select {
 }
 
 .form__icon {
-  color: #2D848F;
+  color: #2d848f;
 }
 
 .contact__intro {
@@ -121,7 +121,7 @@ select {
 }
 
 .footer {
-  background-color: #1C5961;
+  background-color: #1c5961;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -143,7 +143,7 @@ select {
 }
 
 .services__intro {
-  background-color: #2D848F;
+  background-color: #2d848f;
   color: #ffffff;
   padding: 1rem;
   margin: 1.5rem;
@@ -170,7 +170,7 @@ select {
 }
 
 .ecommerce {
-  background-color: #2D848F;
+  background-color: #2d848f;
 }
 
 .ecommerce h2,
@@ -178,8 +178,12 @@ select {
   color: #ffffff;
 }
 
+.services__header {
+  background-color: #2d848f;
+}
+
 .nav {
-  background-color: #1C5961;
+  background-color: #1c5961;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -229,7 +233,7 @@ select {
   display: block;
   width: 100%;
   height: 200px;
-  background-color: #1C5961;
+  background-color: #1c5961;
   text-align: center;
   -webkit-animation: slide 1.2s ease;
           animation: slide 1.2s ease;
