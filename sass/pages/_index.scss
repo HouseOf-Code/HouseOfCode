@@ -1,1 +1,31 @@
+.services__header{
+    background-color: $primary-color;
+    max-width: 87%;
+    margin: 20px auto;
+    text-transform: uppercase;
+    color: $light-color;
+    text-align: center;
+    padding: 10px;
+}
 
+.services{
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    margin: auto;
+    
+}
+
+.services__inner{
+    border: 5px solid $primary-color;
+    margin-bottom: 50px;
+    padding: 100px 10px 5px 10px;
+    text-align: center;
+    box-shadow: 6px 6px 20px $grey;
+
+    h2{
+        font-family:getFonts(headings-rig);
+        font-weight:bold;
+        text-transform: capitalize;
+    }
+}
