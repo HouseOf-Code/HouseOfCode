@@ -48,7 +48,7 @@
             ><i class="fas fa-envelope form__icon"></i> Email</label
           >
           <input type="email" name="email" id="form__email--input" />
-          <span class="form__email--error"></span>
+          <span class="form__email--error error"></span>
         </div>
 
         <div>
@@ -56,18 +56,19 @@
             ><i class="fas fa-user form__icon"></i> Name / Company</label
           >
           <input type="text" name="name" id="form__name--input" />
-          <span class="form__name--error"></span>
+          <span class="form__name--error error"></span>
         </div>
-
         <div>
+          <label for="message" id="form__message--label">
+            <i class="fa fa-comment-alt form__icon"></i> Message</label
+          >
           <textarea
             name="message"
             id="form__message--input"
-            placeholder="Message"
             cols="30"
             rows="10"
           ></textarea>
-          <span class="form__message--error"></span>
+          <span class="form__message--error error"></span>
         </div>
 
         <select name="categories" id="form__select--input">
@@ -76,7 +77,7 @@
           <option value="technical">Technical</option>
         </select>
         <button type="submit" id="form__submit">Submit</button>
-        <span class="form__submit--error"></span>
+        <span class="form__submit--error error"></span>
       </form>
       <p class="form__success"></p>
     </main>
