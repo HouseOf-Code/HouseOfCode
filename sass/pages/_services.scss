@@ -1,0 +1,32 @@
+.services__intro {
+  background-color: $primary-color;
+  color: $light-color;
+  padding: 1rem;
+  margin: 1.5rem;
+}
+
+.text__block {
+  margin: 1rem;
+}
+
+.webdev,
+.ecommerce,
+.webpages {
+  display: grid;
+  justify-items: center;
+  margin-bottom: 3rem;
+
+  & img {
+    width: 70%;
+    margin: 2rem;
+  }
+}
+
+.ecommerce {
+  background-color: $primary-color;
+
+  & h2,
+  p {
+    color: $light-color;
+  }
+}
