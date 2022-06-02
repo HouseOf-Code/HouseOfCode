@@ -1,15 +1,20 @@
+$primary-color: #2d848f;
+$secondary-color: #1c5961;
+$light-color: #ffffff;
+
 $primary-color: #2D848F;
 $secondary-color: #1C5961;
+
 
 $tablet-width: 768px;
 
 $fonts: (
-    primary: "Serenity", sans-serif,
-    headings-gravesend: "Gravesend Sans",sans-serif,
-    headings-gibson: "Gibson", sans-serif,
-    headings-rig:"Rig Shaded",sans-serif,
+  "primary": "Serenity",
+  "headings-gravesend": "Gravesend Sans",
+  "headings-gibson": "Gibson",
+  "headings-rig": "Rig Shaded",
 );
 
 @function getFonts($font) {
-    @return map-get($fonts, $font);
+  @return map-get($fonts, $font);
 }
