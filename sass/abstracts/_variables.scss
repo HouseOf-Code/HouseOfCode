@@ -1,25 +1,20 @@
-<<<<<<< Updated upstream
-$primary-color: #2D848F;
-$secondary-color: #1C5961;
 
-=======
 $primary-color: #2d848f;
 $secondary-color: #1c5961;
 $light-color: #ffffff;
 
 $mobile-width: 600px;
->>>>>>> Stashed changes
 $tablet-width: 768px;
 $laptop-width: 992px;
 $large-screen: 1200px;
 
 $fonts: (
-    primary: "Serenity", sans-serif,
-    headings-gravesend: "Gravesend Sans",sans-serif,
-    headings-gibson: "Gibson", sans-serif,
-    headings-rig:"Rig Shaded",sans-serif,
+  "primary": "Serenity",
+  "headings-gravesend": "Gravesend Sans",
+  "headings-gibson": "Gibson",
+  "headings-rig": "Rig Shaded",
 );
 
 @function getFonts($font) {
-    @return map-get($fonts, $font);
+  @return map-get($fonts, $font);
 }

@@ -1,0 +1,18 @@
+h1,
+h2 {
+  font-family: map-get($fonts, "headings-gibson");
+  font-weight: 500;
+}
+
+p {
+  font-family: map-get($fonts, "primary");
+}
+
+a {
+  text-decoration: none;
+  color: $light-color;
+
+  &:hover {
+    text-decoration: 1px solid underline $light-color;
+  }
+}
