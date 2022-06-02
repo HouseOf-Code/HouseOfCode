@@ -6,7 +6,8 @@
   text-align: center;
 
   &__email--label,
-  &__name--label {
+  &__name--label,
+  &__message--label {
     position: absolute;
     width: fit-content;
     margin-top: 8px;
@@ -20,12 +21,12 @@
 
   &__email--input,
   &__name--input,
-  &__message--input,
-  &__select--input {
+  &__message--input {
     padding: 0.4rem;
   }
 
   &__select--input {
+    height: 2.5rem;
     margin: auto;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -40,6 +41,12 @@
     padding: 0.7rem;
     background-color: $primary-color;
     color: $light-color;
+  }
+
+  & .error {
+    color: $color-error;
+    position: relative;
+    bottom: 15px;
   }
 }
 

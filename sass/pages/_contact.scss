@@ -1,5 +1,11 @@
 .contact__intro {
   text-align: center;
+  width: 250px;
+  margin: auto;
+
+  @media (min-width: 575px) {
+    width: 450px;
+  }
 
   & p {
     text-align: left;
@@ -20,5 +26,9 @@
   &__links {
     display: grid;
     margin-top: 1rem;
+
+    & a {
+      margin: 10px;
+    }
   }
 }
