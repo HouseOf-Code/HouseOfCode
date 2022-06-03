@@ -1,7 +1,7 @@
-
 $primary-color: #2d848f;
 $secondary-color: #1c5961;
 $light-color: #ffffff;
+$form-color: #40cde0;
 $grey: #70707080;
 $color-error: #ff4500;
 
@@ -11,10 +11,10 @@ $laptop-width: 992px;
 $large-screen: 1200px;
 
 $fonts: (
-  "primary": "Serenity",
-  "headings-gravesend": "Gravesend Sans",
-  "headings-gibson": "Gibson",
-  "headings-rig": "Rig Shaded",
+  "primary": "serenity",
+  "headings-gravesend": "gravesend-sans",
+  "headings-gibson": "canada-type-gibson",
+  "headings": "rig-shaded-medium-face",
 );
 
 @function getFonts($font) {

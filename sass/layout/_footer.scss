@@ -1,0 +1,48 @@
+.container {
+  background: $secondary-color;
+  height: 100px;
+  margin-bottom: 0.2rem;
+}
+
+.footer {
+  background-color: $secondary-color;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: map-get($fonts, "headings");
+
+  &__social {
+    color: $light-color;
+    text-transform: uppercase;
+
+    & * {
+      font-size: 2rem;
+
+      @media (min-width: $mobile-width) {
+        font-size: 2.3rem;
+      }
+    }
+  }
+
+  &__links {
+    display: grid;
+    margin-top: 1rem;
+
+    & a {
+      margin: 10px;
+    }
+
+    @media (min-width: $mobile-width) {
+      font-size: 1.3rem;
+    }
+  }
+
+  @media (min-width: $mobile-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $laptop-width) {
+    padding: 2rem;
+  }
+}

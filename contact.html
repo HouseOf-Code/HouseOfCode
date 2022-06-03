@@ -34,7 +34,7 @@
     <main>
       <div class="contact__intro">
         <h1>Contact us</h1>
-        <p>
+        <p class="text__block">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam vitae
           officia ut quam voluptatem assumenda molestiae culpa soluta nostrum
           qui nam, nulla unde sit dolorum ipsum vel mollitia eius earum dolor
@@ -45,7 +45,7 @@
       <form id="form">
         <div>
           <label for="email" id="form__email--label"
-            ><i class="fas fa-envelope form__icon"></i> Email</label
+            ><i class="fas fa-envelope form__icon"></i> Enter your email</label
           >
           <input type="email" name="email" id="form__email--input" />
           <span class="form__email--error error"></span>
@@ -79,8 +79,10 @@
         <button type="submit" id="form__submit">Submit</button>
         <span class="form__submit--error error"></span>
       </form>
-      <p class="form__success"></p>
+      <p id="form__success"></p>
+      <div class="container"></div>
     </main>
+
     <footer class="footer">
       <div class="footer__social">
         <p>&copy; House of code</p>
