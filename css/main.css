@@ -285,6 +285,12 @@ select {
   }
 }
 
+@media screen and (min-width: 992px) {
+  .services__header {
+    max-width: 750px;
+  }
+}
+
 .services-index {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -370,6 +376,7 @@ select {
   color: #ffffff;
   max-width: 90%;
   margin: auto;
+  font-weight: 200;
 }
 
 .need button {
@@ -403,15 +410,20 @@ select {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
-    max-width: 400px;
+    max-width: 500px;
     margin: auto 2rem;
   }
   .need img {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
-    max-width: 500px;
+    max-width: 400px;
     margin: 2rem;
+  }
+  .need h2 {
+    font-weight: normal;
+    text-transform: unset;
+    font-size: 2em;
   }
 }
 
