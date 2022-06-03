@@ -23,7 +23,6 @@
     @media screen and (min-width:$mobile-width){
         max-width: 500px;
     }
-    
 }
 
 .services__inner{
@@ -110,7 +109,7 @@
         text-align: center;
     }
 
-    @media screen and (min-width:$mobile-width){
+    @media screen and (min-width: $mobile-width){
         max-width: 480px;
     }
 }
