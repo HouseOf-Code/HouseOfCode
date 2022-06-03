@@ -7,7 +7,7 @@ const emailError = document.querySelector(".form__email--error");
 const nameError = document.querySelector(".form__name--error");
 const messageError = document.querySelector(".form__message--error");
 
-const formFeedback = document.querySelector(".form__success");
+const formFeedback = document.querySelector("#form__success");
 
 form.addEventListener("submit", validateForm);
 

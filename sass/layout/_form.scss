@@ -11,7 +11,7 @@
     position: absolute;
     width: fit-content;
     margin-top: 8px;
-    margin-left: 10px;
+    margin-left: 1rem;
   }
 
   &__email--input {
@@ -22,11 +22,18 @@
   &__email--input,
   &__name--input,
   &__message--input {
-    padding: 0.4rem;
+    padding-top: 2rem;
+    height: 70px;
+    font-size: 1.2rem;
+
+    @media (min-width: $laptop-width) {
+      font-size: 1.5rem;
+    }
   }
 
   &__select--input {
     height: 2.5rem;
+    font-size: 1rem;
     margin: auto;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -48,36 +55,41 @@
     position: relative;
     bottom: 15px;
   }
+
+  &__success {
+    width: fit-content;
+    margin: 5rem auto;
+    color: $secondary-color;
+    padding: 1rem;
+    font-size: 1.4rem;
+  }
+
+  * {
+    font-family: map-get($fonts, "primary");
+  }
 }
 
 input,
 textarea,
 select {
-  border: 3px solid $primary-color;
+  border: 3px solid $form-color;
+  box-shadow: 0px 2px 4px $form-color;
   margin-bottom: 1rem;
   width: 90%;
 
-  @media (min-width: 575px) {
+  @media (min-width: $mobile-width) {
     width: 70%;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     width: 60%;
   }
 
-  @media (min-width: 992px) {
+  @media (min-width: $laptop-width) {
     width: 50%;
   }
 }
 
 .form__icon {
   color: $primary-color;
-}
-
-.form__success {
-  background-color: $primary-color;
-  width: fit-content;
-  margin: 5rem auto;
-  color: white;
-  padding: 1rem;
 }

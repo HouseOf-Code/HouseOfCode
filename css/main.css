@@ -35,7 +35,6 @@ a:hover {
 
 @media (min-width: 992px) {
   .text__block {
-    width: 60%;
     font-size: 1.3rem;
   }
 }
@@ -59,7 +58,7 @@ a:hover {
   width: -moz-fit-content;
   width: fit-content;
   margin-top: 8px;
-  margin-left: 10px;
+  margin-left: 1rem;
 }
 
 #form__email--input {
@@ -68,11 +67,20 @@ a:hover {
 }
 
 #form__email--input, #form__name--input, #form__message--input {
-  padding: 0.4rem;
+  padding-top: 2rem;
+  height: 70px;
+  font-size: 1.2rem;
+}
+
+@media (min-width: 992px) {
+  #form__email--input, #form__name--input, #form__message--input {
+    font-size: 1.5rem;
+  }
 }
 
 #form__select--input {
   height: 2.5rem;
+  font-size: 1rem;
   margin: auto;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -95,15 +103,31 @@ a:hover {
   bottom: 15px;
 }
 
+#form__success {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 5rem auto;
+  color: #1c5961;
+  padding: 1rem;
+  font-size: 1.4rem;
+}
+
+#form * {
+  font-family: "Serenity";
+}
+
 input,
 textarea,
 select {
-  border: 3px solid #2d848f;
+  border: 3px solid #40cde0;
+  -webkit-box-shadow: 0px 2px 4px #40cde0;
+          box-shadow: 0px 2px 4px #40cde0;
   margin-bottom: 1rem;
   width: 90%;
 }
 
-@media (min-width: 575px) {
+@media (min-width: 600px) {
   input,
   textarea,
   select {
@@ -129,16 +153,6 @@ select {
 
 .form__icon {
   color: #2d848f;
-}
-
-.form__success {
-  background-color: #2d848f;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin: 5rem auto;
-  color: white;
-  padding: 1rem;
 }
 
 .contact__intro {
@@ -313,7 +327,7 @@ select {
   top: 0;
   display: block;
   width: 100%;
-  height: 200px;
+  height: 250px;
   background-color: #1c5961;
   text-align: center;
   -webkit-animation: slide 1.2s ease;
@@ -325,7 +339,7 @@ select {
     height: 0px;
   }
   to {
-    height: 200px;
+    height: 250px;
   }
 }
 
@@ -334,7 +348,7 @@ select {
     height: 0px;
   }
   to {
-    height: 200px;
+    height: 250px;
   }
 }
 
@@ -366,6 +380,12 @@ select {
   font-size: 2rem;
 }
 
+@media (min-width: 600px) {
+  .footer__social * {
+    font-size: 2.3rem;
+  }
+}
+
 .footer__links {
   display: -ms-grid;
   display: grid;
@@ -377,11 +397,23 @@ select {
 }
 
 @media (min-width: 600px) {
+  .footer__links {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 600px) {
   .footer {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 992px) {
+  .footer {
+    padding: 2rem;
   }
 }
 
@@ -445,5 +477,19 @@ select {
   border-radius: 15px;
   margin-bottom: 2rem;
   margin-top: 0.5rem;
+}
+
+button {
+  -webkit-box-shadow: 0px 2px 4px #40cde0;
+          box-shadow: 0px 2px 4px #40cde0;
+  font-size: 1.2rem;
+}
+
+button:hover,
+#form__submit:hover {
+  cursor: pointer;
+  background-color: #40cde0;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
 }
 /*# sourceMappingURL=main.css.map */
