@@ -303,6 +303,17 @@ select {
   }
 }
 
+@media screen and (min-width: 992px) {
+  .services {
+    max-width: 1000px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-bottom: 4rem;
+  }
+}
+
 .services__inner {
   border: 5px solid #2d848f;
   margin-bottom: 4rem;
@@ -315,6 +326,20 @@ select {
 .services__inner h2 {
   font-weight: bold;
   text-transform: capitalize;
+}
+
+@media screen and (min-width: 992px) {
+  .services__inner {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 20px;
+    padding-top: 10rem;
+  }
+  .services__inner h2 {
+    text-transform: uppercase;
+  }
 }
 
 .need {
@@ -363,10 +388,36 @@ select {
   margin: auto;
 }
 
+@media screen and (min-width: 992px) {
+  .need {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .need__inner {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    max-width: 400px;
+    margin: auto 2rem;
+  }
+  .need img {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    max-width: 500px;
+    margin: 2rem;
+  }
+}
+
 .technology__header {
   background-color: #2d848f;
   max-width: 80%;
-  margin: 4rem auto 1.5rem;
+  margin: 5rem auto 1.5rem;
   color: #ffffff;
   text-align: center;
   padding: 1rem;
@@ -386,7 +437,7 @@ select {
   display: -ms-flexbox;
   display: flex;
   width: 80%;
-  margin: 2rem auto;
+  margin: 2rem auto 5em;
 }
 
 .technology p {
