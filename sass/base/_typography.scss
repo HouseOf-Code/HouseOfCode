@@ -18,3 +18,12 @@ a {
     text-decoration: 1px solid underline $light-color;
   }
 }
+
+.text__block {
+  margin: 1rem;
+
+  @media (min-width: $laptop-width) {
+    width: 60%;
+    font-size: 1.3rem;
+  }
+}
