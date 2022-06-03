@@ -324,8 +324,9 @@ select {
 }
 
 .services__inner h2 {
-  font-weight: bold;
+  font-weight: normal;
   text-transform: capitalize;
+  font-size: 2rem;
 }
 
 @media screen and (min-width: 992px) {

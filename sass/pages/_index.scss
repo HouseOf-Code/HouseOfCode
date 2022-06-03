@@ -41,8 +41,9 @@
 
     h2{
         font-family:getFonts(headings-rig);
-        font-weight:bold;
+        font-weight:normal;
         text-transform: capitalize;
+        font-size: 2rem;
     }
 
     @media screen and (min-width:$laptop-width){
