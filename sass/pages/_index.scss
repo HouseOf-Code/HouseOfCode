@@ -12,6 +12,10 @@
         max-width: 480px;
     }
 
+    @media screen and (min-width:$laptop-width){
+        max-width: 750px;
+    }
+
 }
 
 .services-index{
@@ -79,6 +83,7 @@
         color: $light-color; 
         max-width: 90%;
         margin: auto;
+        font-weight:200
     }
 
     button{
@@ -104,14 +109,20 @@
         
         &__inner{
             order: 1;
-            max-width: 400px;
+            max-width: 500px;
             margin: auto 2rem;
         }
 
         img{
             order: 2;
-            max-width:500px;
+            max-width:400px;
             margin: 2rem;
+        }
+
+        h2{
+            font-weight: normal;
+            text-transform:unset;
+            font-size: 2em;
         }
     }
 }
