@@ -1,9 +1,12 @@
-h1,
-h2 {
+h1 {
   font-family: map-get($fonts, "headings-gravesend");
   font-weight: 500;
 }
-
+h2 {
+  font-family: map-get($fonts, "headings-gibson");
+  font-weight: 400;
+  text-transform: uppercase;
+}
 p {
   font-family: map-get($fonts, "primary");
 }
