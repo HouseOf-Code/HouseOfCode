@@ -267,6 +267,82 @@ select {
   }
 }
 
+.intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.intro img {
+  max-width: 80%;
+  margin: 3rem auto;
+}
+
+.intro h1 {
+  background-color: #2d848f;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  width: 80%;
+  margin: 2rem auto 1rem;
+  -webkit-box-shadow: 0px 6px 9px #00000029;
+          box-shadow: 0px 6px 9px #00000029;
+  font-size: 1.5rem;
+}
+
+.intro p {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.bio {
+  max-width: 80%;
+  margin: auto;
+}
+
+.bio p {
+  margin-bottom: 4rem;
+}
+
+.projects {
+  max-width: 80%;
+  margin: auto;
+}
+
+.projects img {
+  max-width: 100%;
+}
+
+.projects p {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.projects__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 5rem;
+}
+
+.projects button {
+  background-color: #2d848f;
+  color: #ffffff;
+  border: 0px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: "rig-shaded-medium-face";
+  padding: 0.5rem 1rem;
+  width: 45%;
+}
+
 .services__header {
   background-color: #2d848f;
   max-width: 80%;
