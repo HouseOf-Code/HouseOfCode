@@ -5,15 +5,18 @@
     text-transform: uppercase;
     color: $light-color;
     text-align: center;
-    padding: 1rem;
+    padding: 0.3rem;
     box-shadow: 0px 3px 6px #00000029;
+    font-size: 2rem;
 
     @media screen and (min-width:$mobile-width){
-        max-width: 480px;
+        width: 480px;
     }
 
     @media screen and (min-width:$laptop-width){
-        max-width: 750px;
+        width: 75%;
+        max-width:1100px;
+        font-size: 3rem;
     }
 
 }
@@ -33,6 +36,12 @@
         flex-direction: row;
         margin-bottom: 4rem;
     }
+
+    @media screen and (min-width:$laptop-width){
+        max-width: 1200px;
+    }
+
+
     
 }
 
@@ -48,18 +57,31 @@
         font-weight:normal;
         text-transform: capitalize;
         font-size: 2rem;
+        margin-bottom: 0;
+    }
+
+    p{
+        font-size: 1rem;
+        font-weight: 100;
     }
 
     @media screen and (min-width:$laptop-width){
         flex-direction: row;
-        margin:20px;
-        padding-top: 10rem;
+        margin:20px auto;
+        padding-top: 12rem;
+        width: 28%;
 
         h2{
             text-transform: uppercase;
+            font-size: 2.5rem;
+        }
+
+        p{
+            font-size: 1.5rem;
         }
     
     }
+
 }
 
 .need{
@@ -77,13 +99,16 @@
     h2{
         color: $light-color;
         font-weight: bold;
+        font-size: 2rem;
+        text-transform:unset;
     }
 
     p{
         color: $light-color; 
         max-width: 90%;
         margin: auto;
-        font-weight:200
+        font-weight:200;
+        font-size: 1.5rem;
     }
 
     button{
@@ -106,6 +131,7 @@
     @media screen and (min-width:$laptop-width){
         flex-direction: row;
         justify-content: center;
+        padding: 2rem;
         
         &__inner{
             order: 1;
@@ -121,8 +147,7 @@
 
         h2{
             font-weight: normal;
-            text-transform:unset;
-            font-size: 2em;
+            font-size:2.5em;
         }
     }
 }
@@ -133,12 +158,17 @@
     margin: 5rem auto 1.5rem;
     color: $light-color;
     text-align: center;
-    padding: 1rem;
+    padding: 0.5rem;
     box-shadow: 0px 3px 6px #00000029;
     font-size: 2rem;
 
     @media screen and (min-width:$mobile-width){
         max-width: 480px;
+    }
+
+    @media screen and (min-width:$laptop-width){
+        max-width: 1000px;
+        font-size: 3rem;
     }
 }
 
@@ -148,7 +178,8 @@
     margin:2rem auto 5em;
 
     p{
-      margin:5px  
+      margin:5px;
+      font-size: 1.5rem;
     }
 
     &__inner{
@@ -158,5 +189,14 @@
 
     @media screen and (min-width:$mobile-width){
         max-width: 480px;
+    }
+
+    @media screen and (min-width:$laptop-width){
+        max-width: 1000px;
+
+        p{
+            font-size: 2rem;
+            padding-bottom: 1rem;
+        }
     }
 }
