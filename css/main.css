@@ -313,7 +313,6 @@ select {
   margin: 2rem auto 1rem;
   -webkit-box-shadow: 0px 6px 9px #00000029;
           box-shadow: 0px 6px 9px #00000029;
-  font-size: 1.5rem;
 }
 
 .intro p {
@@ -387,6 +386,10 @@ select {
   .projects {
     width: 70%;
     max-width: 1000px;
+  }
+  .projects button {
+    padding: 1rem;
+    font-size: 2rem;
   }
 }
 
