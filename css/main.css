@@ -10,16 +10,38 @@ body {
 h1 {
   font-family: "gravesend-sans";
   font-weight: 500;
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 992px) {
+  h1 {
+    font-size: 3rem;
+  }
 }
 
 h2 {
   font-family: "canada-type-gibson";
   font-weight: 400;
   text-transform: uppercase;
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 992px) {
+  h2 {
+    font-size: 2.5rem;
+  }
 }
 
 p {
   font-family: "serenity";
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+@media screen and (min-width: 992px) {
+  p {
+    font-size: 1.5rem;
+  }
 }
 
 a {
@@ -378,7 +400,6 @@ select {
   padding: 0.3rem;
   -webkit-box-shadow: 0px 3px 6px #00000029;
           box-shadow: 0px 3px 6px #00000029;
-  font-size: 2rem;
 }
 
 @media screen and (min-width: 600px) {
@@ -391,7 +412,6 @@ select {
   .services__header {
     width: 75%;
     max-width: 1100px;
-    font-size: 3rem;
   }
 }
 
@@ -442,13 +462,7 @@ select {
 .services__inner h2 {
   font-weight: normal;
   text-transform: capitalize;
-  font-size: 2rem;
   margin-bottom: 0;
-}
-
-.services__inner p {
-  font-size: 1rem;
-  font-weight: 100;
 }
 
 @media screen and (min-width: 992px) {
@@ -463,10 +477,6 @@ select {
   }
   .services__inner h2 {
     text-transform: uppercase;
-    font-size: 2.5rem;
-  }
-  .services__inner p {
-    font-size: 1.5rem;
   }
 }
 
@@ -491,7 +501,6 @@ select {
 .need h2 {
   color: #ffffff;
   font-weight: bold;
-  font-size: 2rem;
   text-transform: unset;
 }
 
@@ -500,7 +509,6 @@ select {
   max-width: 90%;
   margin: auto;
   font-weight: 200;
-  font-size: 1.5rem;
 }
 
 .need button {
@@ -560,7 +568,6 @@ select {
   padding: 0.5rem;
   -webkit-box-shadow: 0px 3px 6px #00000029;
           box-shadow: 0px 3px 6px #00000029;
-  font-size: 2rem;
 }
 
 @media screen and (min-width: 600px) {
@@ -572,7 +579,6 @@ select {
 @media screen and (min-width: 992px) {
   .technology__header {
     max-width: 1000px;
-    font-size: 3rem;
   }
 }
 
@@ -587,6 +593,7 @@ select {
 .technology p {
   margin: 5px;
   font-size: 1.5rem;
+  font-weight: 500;
 }
 
 .technology__inner {
