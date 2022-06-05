@@ -299,13 +299,30 @@ select {
   margin-bottom: 3rem;
 }
 
+@media screen and (min-width: 768px) {
+  .intro img {
+    width: 40%;
+  }
+  .intro h1 {
+    width: 70%;
+    max-width: 1000px;
+  }
+}
+
 .bio {
-  max-width: 80%;
+  width: 80%;
   margin: auto;
+  max-width: 1000px;
 }
 
 .bio p {
   margin-bottom: 4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .bio {
+    width: 70%;
+  }
 }
 
 .projects {
@@ -314,7 +331,7 @@ select {
 }
 
 .projects img {
-  max-width: 100%;
+  width: 100%;
 }
 
 .projects p {
@@ -341,6 +358,14 @@ select {
   font-family: "rig-shaded-medium-face";
   padding: 0.5rem 1rem;
   width: 45%;
+  max-width: 400px;
+}
+
+@media screen and (min-width: 768px) {
+  .projects {
+    width: 70%;
+    max-width: 1000px;
+  }
 }
 
 .services__header {
