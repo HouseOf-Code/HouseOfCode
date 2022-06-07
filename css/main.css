@@ -543,7 +543,7 @@ select {
           box-shadow: 1px 3px 7px 0px #70707080;
 }
 
-.developers__card a {
+.developers__card h3 {
   color: #1c5961;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
