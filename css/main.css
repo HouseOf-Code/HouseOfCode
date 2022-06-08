@@ -736,6 +736,12 @@ select {
   margin-left: 1rem;
 }
 
+@media (min-width: 768px) {
+  .nav__menu {
+    display: none;
+  }
+}
+
 .nav__inner {
   display: none;
 }
