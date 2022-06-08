@@ -288,6 +288,117 @@ select {
   }
 }
 
+
+.back {
+  color: black;
+  width: 70%;
+  max-width: 1000px;
+  margin: 4rem auto 1rem;
+}
+
+.intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.intro img {
+  max-width: 80%;
+  margin: 1rem auto 4rem;
+}
+
+.intro h1 {
+  background-color: #2d848f;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  width: 80%;
+  margin: 2rem auto 1rem;
+  -webkit-box-shadow: 0px 6px 9px #00000029;
+          box-shadow: 0px 6px 9px #00000029;
+}
+
+.intro p {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .intro img {
+    width: 40%;
+    margin-top: 5rem;
+  }
+  .intro h1 {
+    width: 70%;
+    max-width: 1000px;
+  }
+}
+
+.bio {
+  width: 80%;
+  margin: auto;
+  max-width: 1000px;
+}
+
+.bio p {
+  margin-bottom: 4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .bio {
+    width: 70%;
+  }
+}
+
+.projects {
+  max-width: 80%;
+  margin: auto;
+}
+
+.projects img {
+  width: 100%;
+}
+
+.projects p {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.projects__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 5rem;
+}
+
+.projects a {
+  background-color: #2d848f;
+  color: #ffffff;
+  border: 0px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: "rig-shaded-medium-face";
+  padding: 1rem;
+  width: 45%;
+}
+
+@media screen and (min-width: 768px) {
+  .projects {
+    width: 70%;
+    max-width: 1000px;
+  }
+  .projects a {
+    font-size: 2rem;
+  }
+}
+
 .services__header {
   background-color: #2d848f;
   max-width: 80%;
@@ -351,10 +462,14 @@ select {
 .services__inner {
   border: 5px solid #2d848f;
   margin-bottom: 4rem;
-  padding: 9rem 0.5rem 1rem 0.5rem;
+  padding: 1rem 0.5rem 1rem 0.5rem;
   text-align: center;
   -webkit-box-shadow: 6px 6px 20px #70707080;
           box-shadow: 6px 6px 20px #70707080;
+}
+
+.services__inner img {
+  width: 100%;
 }
 
 .services__inner h2 {
@@ -370,7 +485,7 @@ select {
         -ms-flex-direction: row;
             flex-direction: row;
     margin: 20px auto;
-    padding-top: 12rem;
+    padding-top: 1rem;
     width: 28%;
   }
   .services__inner h2 {
@@ -387,6 +502,7 @@ select {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-bottom: 6rem;
 }
 
 .need img {
@@ -405,11 +521,11 @@ select {
 .need p {
   color: #ffffff;
   max-width: 90%;
-  margin: auto;
+  margin: 4rem auto;
   font-weight: 200;
 }
 
-.need button {
+.need a {
   background-color: #ffffff;
   color: #2d848f;
   border: 0px;
@@ -461,7 +577,7 @@ select {
 
 .technology__header {
   background-color: #2d848f;
-  max-width: 80%;
+  width: 80%;
   margin: 5rem auto 1.5rem;
   color: #ffffff;
   text-align: center;
@@ -514,6 +630,68 @@ select {
   .technology p {
     font-size: 2rem;
     padding-bottom: 1rem;
+  }
+}
+
+.cases__index {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 6.5rem 1fr 1fr;
+      grid-template-rows: 6.5rem 1fr 1fr;
+  width: 80%;
+  max-width: 1000px;
+  margin: 1rem auto 4rem;
+}
+
+.cases__index h1 {
+  grid-column: span 2;
+  background-color: #2d848f;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 0.3rem;
+}
+
+.cases__index p {
+  grid-column: span 2;
+}
+
+.cases__index img {
+  grid-column: span 1;
+  width: 100%;
+  margin: auto;
+}
+
+.cases__index a {
+  grid-column: span 1;
+  color: #ffffff;
+  background-color: #2d848f;
+  height: 2.2rem;
+  width: 5rem;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 30px;
+  margin: auto;
+}
+
+@media screen and (min-width: 600px) {
+  .cases__index {
+    -ms-grid-rows: 6.5rem 0.5fr 1fr;
+        grid-template-rows: 6.5rem 0.5fr 1fr;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .cases__index {
+    -ms-grid-rows: 9rem 0.5fr 1fr;
+        grid-template-rows: 9rem 0.5fr 1fr;
+  }
+  .cases__index a {
+    height: 4rem;
+    padding: 1rem;
+    width: 20rem;
+    font-size: 1.5rem;
   }
 }
 
