@@ -63,6 +63,8 @@ a:hover {
 @media (min-width: 992px) {
   .text__block {
     font-size: 1.3rem;
+    width: 70%;
+    margin: 1rem auto;
   }
 }
 
