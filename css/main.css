@@ -289,6 +289,13 @@ select {
   }
 }
 
+.back {
+  color: black;
+  width: 70%;
+  max-width: 1000px;
+  margin: 4rem auto 1rem;
+}
+
 .intro {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -301,7 +308,7 @@ select {
 
 .intro img {
   max-width: 80%;
-  margin: 7rem auto 4rem;
+  margin: 1rem auto 4rem;
 }
 
 .intro h1 {
@@ -323,6 +330,7 @@ select {
 @media screen and (min-width: 768px) {
   .intro img {
     width: 40%;
+    margin-top: 5rem;
   }
   .intro h1 {
     width: 70%;
