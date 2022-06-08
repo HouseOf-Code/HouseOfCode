@@ -1,0 +1,14 @@
+.contact__intro {
+  text-align: center;
+  width: 250px;
+  margin: auto;
+
+  @media (min-width: $mobile-width) {
+    width: 450px;
+  }
+
+  & p {
+    text-align: left;
+    margin: 0px 1rem;
+  }
+}
