@@ -1,33 +1,72 @@
 .services__header{
     background-color: $primary-color;
-    max-width: 87%;
-    margin: 20px auto;
+    max-width: 80%;
+    margin: 5rem auto 2rem;
     text-transform: uppercase;
     color: $light-color;
     text-align: center;
-    padding: 10px;
+    padding: 0.3rem;
+    box-shadow: 0px 3px 6px #00000029;
+
+    @media screen and (min-width:$mobile-width){
+        width: 480px;
+    }
+
+    @media screen and (min-width:$laptop-width){
+        width: 75%;
+        max-width:1100px;
+    }
+
 }
 
-.services{
+.services-index{
     display: flex;
     flex-direction: column;
-    max-width: 90%;
+    max-width: 85%;
     margin: auto;
-    
+
+    @media screen and (min-width:$mobile-width){
+        max-width: 500px;
+    }
+
+    @media screen and (min-width:$laptop-width){
+        max-width: 1000px;
+        flex-direction: row;
+        margin-bottom: 4rem;
+    }
+
+    @media screen and (min-width:$laptop-width){
+        max-width: 1200px;
+    }
+
 }
 
 .services__inner{
     border: 5px solid $primary-color;
-    margin-bottom: 50px;
-    padding: 100px 10px 5px 10px;
+    margin-bottom: 4rem;
+    padding: 9rem 0.5rem 1rem 0.5rem;
     text-align: center;
     box-shadow: 6px 6px 20px $grey;
 
     h2{
         font-family:getFonts(headings-rig);
-        font-weight:bold;
+        font-weight:normal;
         text-transform: capitalize;
+        margin-bottom: 0;
     }
+
+
+    @media screen and (min-width:$laptop-width){
+        flex-direction: row;
+        margin:20px auto;
+        padding-top: 12rem;
+        width: 28%;
+
+        h2{
+            text-transform: uppercase;
+        }
+    }
+
 }
 
 .need{
@@ -37,28 +76,110 @@
 
     img{
         max-width: 80%;
-        padding: 30px 15px;
+        padding: 3rem 1.5rem;
         margin: 30px auto;
-        border: 2px solid $light-color;
+        border: 3px solid $light-color;
     }
 
     h2{
         color: $light-color;
         font-weight: bold;
+        text-transform:unset;
     }
 
     p{
         color: $light-color; 
+        max-width: 90%;
+        margin: auto;
+        font-weight:200;
     }
 
     button{
         background-color: $light-color;
-
+        color: $primary-color;
+        border: 0px;
+        border-radius: 10px;
+        font-size: 1.5rem;
+        padding: 1rem 2rem;
+        text-transform: uppercase;
+        margin: 2rem 0 3rem;
+        box-shadow: 0px 6px 6px #00000029;
     }
 
     &__inner{
         text-align: center;
         max-width: 90%;
         margin: auto;
+    }
+
+    @media screen and (min-width:$laptop-width){
+        flex-direction: row;
+        justify-content: center;
+        padding: 2rem;
+        
+        &__inner{
+            order: 1;
+            max-width: 500px;
+            margin: auto 2rem;
+        }
+
+        img{
+            order: 2;
+            max-width:400px;
+            margin: 2rem;
+        }
+
+        h2{
+            font-weight: normal;
+            font-size:2.5em;
+        }
+    }
+}
+
+.technology__header{
+    background-color: $primary-color;
+    max-width: 80%;
+    margin: 5rem auto 1.5rem;
+    color: $light-color;
+    text-align: center;
+    padding: 0.5rem;
+    box-shadow: 0px 3px 6px #00000029;
+
+    @media screen and (min-width:$mobile-width){
+        max-width: 480px;
+    }
+
+    @media screen and (min-width:$laptop-width){
+        max-width: 1000px;
+    }
+}
+
+.technology{
+    display: flex;
+    width:80%;
+    margin:2rem auto 5em;
+
+    p{
+      margin:5px;
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+
+    &__inner{
+        margin: auto;
+        text-align: center;
+    }
+
+    @media screen and (min-width:$mobile-width){
+        max-width: 480px;
+    }
+
+    @media screen and (min-width:$laptop-width){
+        max-width: 1000px;
+
+        p{
+            font-size: 2rem;
+            padding-bottom: 1rem;
+        }
     }
 }

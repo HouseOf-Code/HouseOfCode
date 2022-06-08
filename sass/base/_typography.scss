@@ -1,14 +1,30 @@
 h1 {
   font-family: map-get($fonts, "headings-gravesend");
   font-weight: 500;
+  font-size: 2rem;
+  
+  @media screen and (min-width:$laptop-width){
+    font-size: 3rem;
+  }
 }
 h2 {
   font-family: map-get($fonts, "headings-gibson");
   font-weight: 400;
   text-transform: uppercase;
+  font-size: 2rem;
+  
+  @media screen and (min-width:$laptop-width){
+    font-size: 2.5rem;
+  }
 }
 p {
   font-family: map-get($fonts, "primary");
+  font-size: 1rem;
+  font-weight: lighter;
+
+  @media screen and (min-width:$laptop-width){
+    font-size: 1.5rem;
+  }
 }
 
 a {

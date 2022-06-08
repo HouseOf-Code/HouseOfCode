@@ -10,6 +10,10 @@
     transform: scale(2);
     color: $light-color;
     margin-left: 1rem;
+
+    @media (min-width: 768px){
+      display: none;
+    }
   }
 
   &__inner {
