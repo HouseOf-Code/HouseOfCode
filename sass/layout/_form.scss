@@ -1,0 +1,97 @@
+#form {
+  margin: auto;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  &__email--label,
+  &__name--label,
+  &__message--label {
+    position: absolute;
+    width: fit-content;
+    margin-top: 8px;
+    margin-left: 1rem;
+    font-family: map-get($fonts, "primary");
+  }
+
+  &__email--input {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  &__email--input,
+  &__name--input,
+  &__message--input {
+    padding-top: 2rem;
+    height: 70px;
+    font-size: 1.2rem;
+    font-family: map-get($fonts, "primary");
+
+    @media (min-width: $laptop-width) {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__select--input {
+    height: 2.5rem;
+    font-size: 1rem;
+    margin: auto;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-family: map-get($fonts, "primary");
+  }
+
+  &__submit {
+    margin: auto;
+    margin-top: 1rem;
+    width: 150px;
+    border: none;
+    border-radius: 15px;
+    padding: 0.7rem;
+    background-color: $primary-color;
+    color: $light-color;
+  }
+
+  & .error {
+    color: $color-error;
+    position: relative;
+    bottom: 15px;
+  }
+
+  &__success {
+    width: fit-content;
+    margin: 5rem auto;
+    color: $secondary-color;
+    padding: 1rem;
+    font-size: 1.4rem;
+  }
+
+  
+}
+
+input,
+textarea,
+select {
+  border: 3px solid $form-color;
+  box-shadow: 0px 2px 4px $form-color;
+  margin-bottom: 1rem;
+  width: 90%;
+
+  @media (min-width: $mobile-width) {
+    width: 70%;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 60%;
+  }
+
+  @media (min-width: $laptop-width) {
+    width: 50%;
+  }
+}
+
+.form__icon {
+  color: $primary-color;
+  
+}

@@ -1,0 +1,96 @@
+.back {
+  color: black;
+  width: 70%;
+  max-width: 1000px;
+  margin: 4rem auto 1rem;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+
+  img {
+    max-width: 80%;
+    margin: 1rem auto 4rem;
+  }
+
+  h1 {
+    background-color: $primary-color;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    width: 80%;
+    margin: 2rem auto 1rem;
+    box-shadow: 0px 6px 9px #00000029;
+  }
+
+  p {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    img {
+      width: 40%;
+      margin-top: 5rem;
+    }
+
+    h1 {
+      width: 70%;
+      max-width: 1000px;
+    }
+  }
+}
+
+.bio {
+  width: 80%;
+  margin: auto;
+  max-width: 1000px;
+
+  p {
+    margin-bottom: 4rem;
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    width: 70%;
+  }
+}
+
+.projects {
+  max-width: 80%;
+  margin: auto;
+  img {
+    width: 100%;
+  }
+
+  p {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+  }
+
+  a {
+    background-color: $primary-color;
+    color: $light-color;
+    border: 0px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-family: getFonts(headings);
+    padding: 1rem;
+    width: 45%;
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    width: 70%;
+    max-width: 1000px;
+
+    a {
+      font-size: 2rem;
+    }
+  }
+}

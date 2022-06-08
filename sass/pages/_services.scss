@@ -1,0 +1,63 @@
+.services h2 {
+  text-align: center;
+
+  @media (min-width: $laptop-width) {
+    font-size: 2.5rem;
+  }
+}
+
+.services__heading {
+  display: flex;
+  margin: 2rem auto;
+  background-color: $primary-color;
+  color: $light-color;
+  padding: 0.3rem;
+  width: fit-content;
+}
+
+.webdev,
+.ecommerce,
+.webpages {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  margin-bottom: 3rem;
+  padding: 1rem;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+
+    & p {
+      align-self: center;
+
+      /* @media (min-width: $laptop-width) {
+        font-size: 1.5rem;
+      } */
+    }
+
+    & img {
+      padding: 2rem;
+      width: 50%;
+    }
+  }
+}
+
+.ecommerce {
+  background-color: $primary-color;
+  padding: 4rem 1rem;
+
+  & p {
+    color: $light-color;
+  }
+
+  &__heading {
+    position: absolute;
+    color: $light-color;
+    right: 0;
+    left: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row-reverse;
+  }
+}
