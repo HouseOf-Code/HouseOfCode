@@ -44,10 +44,13 @@
 .services__inner{
     border: 5px solid $primary-color;
     margin-bottom: 4rem;
-    padding: 9rem 0.5rem 1rem 0.5rem;
+    padding: 1rem 0.5rem 1rem 0.5rem;
     text-align: center;
     box-shadow: 6px 6px 20px $grey;
 
+    img{
+        width: 100%;
+    }
     h2{
         font-family:getFonts(headings-rig);
         font-weight:normal;
@@ -59,7 +62,7 @@
     @media screen and (min-width:$laptop-width){
         flex-direction: row;
         margin:20px auto;
-        padding-top: 12rem;
+        padding-top: 1rem;
         width: 28%;
 
         h2{
@@ -73,6 +76,7 @@
     background-color: $primary-color;
     display: flex;
     flex-direction: column;
+    padding-bottom: 6rem;
 
     img{
         max-width: 80%;
@@ -90,11 +94,11 @@
     p{
         color: $light-color; 
         max-width: 90%;
-        margin: auto;
+        margin: 4rem auto;
         font-weight:200;
     }
 
-    button{
+    a{
         background-color: $light-color;
         color: $primary-color;
         border: 0px;
@@ -138,7 +142,7 @@
 
 .technology__header{
     background-color: $primary-color;
-    max-width: 80%;
+    width: 80%;
     margin: 5rem auto 1.5rem;
     color: $light-color;
     text-align: center;
@@ -182,4 +186,63 @@
             padding-bottom: 1rem;
         }
     }
+}
+
+.cases__index{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 6.5rem 1fr 1fr; 
+    width: 80%;
+    max-width: 1000px;
+    margin: 1rem auto 4rem;
+
+    h1{
+        grid-column: span 2;
+        background-color: $primary-color;
+        color: $light-color;
+        text-align: center;
+        padding-top:0.3rem;
+    }
+
+    p{
+        grid-column: span 2;
+    }
+
+    img{
+        grid-column: span 1;
+        width: 100%;
+        margin: auto;
+    }
+
+    a{
+        grid-column: span 1;
+        color:$light-color;
+        background-color:$primary-color;
+        height: 2.2rem;
+        width: 5rem;
+        text-align: center;
+        padding: 0.5rem;
+        border-radius: 30px;
+        margin: auto;
+
+    }
+
+    @media screen and (min-width:$mobile-width){
+        grid-template-rows: 6.5rem 0.5fr 1fr;
+
+    }
+
+    @media screen and (min-width:$laptop-width){
+        grid-template-rows: 9rem 0.5fr 1fr;
+        
+        a{
+            height: 4rem;
+            padding: 1rem;
+            width: 20rem;
+            font-size: 1.5rem;
+        }
+    }
+   
+
+    
 }
