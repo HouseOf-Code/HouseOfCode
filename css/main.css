@@ -288,34 +288,6 @@ select {
   }
 }
 
-.banner {
-  background-image: url(/images/diverse-people-working-office.jpg);
-  background-size: cover;
-  height: 13rem;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-@media screen and (min-width: 600px) {
-  .banner {
-    height: 20rem;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .banner {
-    height: 30rem;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .banner {
-    height: 35rem;
-  }
-}
-
 .services__header {
   background-color: #2d848f;
   max-width: 80%;
@@ -1040,6 +1012,7 @@ button:hover,
 .projects a {
   background-color: #2d848f;
   color: #ffffff;
+  text-align: center;
   border: 0px;
   border-radius: 10px;
   font-size: 1rem;
