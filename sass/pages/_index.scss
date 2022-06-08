@@ -1,7 +1,30 @@
+
+.banner{
+   background-image: url(/images/diverse-people-working-office.jpg);
+   background-size: cover;
+   height: 13rem;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+
+   @media screen and (min-width:$mobile-width){
+    height: 20rem;
+   }
+
+   @media screen and (min-width:$laptop-width){
+       height: 30rem;
+   }
+
+   @media screen and (min-width:$laptop-width){
+       height: 35rem;
+   }
+  }
+
 .services__header{
     background-color: $primary-color;
     max-width: 80%;
-    margin: 5rem auto 2rem;
+    margin: 4rem auto 2rem;
     text-transform: uppercase;
     color: $light-color;
     text-align: center;
