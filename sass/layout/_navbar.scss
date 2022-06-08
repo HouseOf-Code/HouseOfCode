@@ -1,0 +1,56 @@
+.nav {
+  background-color: $secondary-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+
+  &__menu {
+    z-index: 2;
+    transform: scale(2);
+    color: $light-color;
+    margin-left: 1rem;
+
+    @media (min-width: 768px){
+      display: none;
+    }
+  }
+
+  &__inner {
+    display: none;
+
+    @media (min-width: 768px) {
+      display: flex;
+      font-size: 1.5rem;
+    }
+
+    & li {
+      list-style-type: none;
+      margin: 20px;
+    }
+  }
+
+  &__active {
+    text-decoration: 1px solid underline $light-color;
+  }
+}
+
+.show {
+  position: absolute;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: $secondary-color;
+  text-align: center;
+  animation: slide 1s ease;
+}
+
+@keyframes slide {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 100%;
+  }
+}
