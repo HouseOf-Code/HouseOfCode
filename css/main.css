@@ -63,6 +63,8 @@ a:hover {
 @media (min-width: 992px) {
   .text__block {
     font-size: 1.3rem;
+    width: 70%;
+    margin: 1rem auto;
   }
 }
 
@@ -733,6 +735,7 @@ select {
 }
 
 .show {
+  z-index: 1;
   position: absolute;
   top: 0;
   display: block;
