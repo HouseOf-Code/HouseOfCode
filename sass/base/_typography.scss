@@ -43,5 +43,7 @@ a {
 
   @media (min-width: $laptop-width) {
     font-size: 1.3rem;
+    width: 70%;
+    margin: 1rem auto;
   }
 }
