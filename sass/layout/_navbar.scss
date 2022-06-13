@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 70px;
+  height: 120px;
 
   &__menu {
     z-index: 2;
@@ -33,9 +33,15 @@
   &__active {
     text-decoration: 1px solid underline $light-color;
   }
+
+  &__logo img {
+    width: 150px;
+    margin-right: 10px;
+  }
 }
 
 .show {
+  z-index: 1;
   position: absolute;
   top: 0;
   display: block;
